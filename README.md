@@ -1,6 +1,6 @@
 # Gemini
 
-`@cinatra-ai/gemini-assistant` is the Gemini conversational assistant for the Cinatra platform, part of the multi-vendor Assistants epic (cinatra-ai/cinatra#1873). It is an agent-kind extension whose payload is the `cinatra/config.json` assistant declaration — not a compilable OpenAgentSpec flow. Chat with it under the lowercase tag `@gemini`: all assistant tags are lowercase per owner ruling 2026-07-22 (groganz), and the declaration validator rejects a non-normalized `preferredTag`. It is conversation-only today, carrying no tools and no MCP block until native-MCP activation lands (cinatra-ai/cinatra#1717). It handles no credentials of its own — Gemini API access resolves through the required `@cinatra-ai/gemini-connector` at runtime. Part of cinatra-ai/cinatra#1876.
+`@cinatra-ai/gemini-assistant` is the Gemini conversational assistant for the Cinatra platform, one of the platform's multi-vendor assistants. It is an agent-kind extension whose payload is the `cinatra/config.json` assistant declaration — not a compilable OpenAgentSpec flow. Chat with it under the lowercase tag `@gemini`: all assistant tags are lowercase, and the declaration validator rejects a non-normalized `preferredTag`. It is conversation-only today, carrying no tools and no MCP block until native MCP support is available. It handles no credentials of its own — Gemini API access resolves through the required `@cinatra-ai/gemini-connector` at runtime.
 
 ## Works with
 
